@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block content %}
+
+<p>
+  Tired of the same old tunes? Feeling down and in need of some soul-soothing
+  melodies? Bored with playlists that barely change? Let's find you some fresh,
+  uplifting music.
+</p>
+<form action="{{ url_for('capture')}}" method="POST">
+  <!--i want the inout to tbe of type submit and have the name let's go-->
+  <input
+    class="btn btn-link btn-lg"
+    type="submit"
+    name="let's go"
+    value="Let's Go"
+  />
+</form>
+{% endblock content %}

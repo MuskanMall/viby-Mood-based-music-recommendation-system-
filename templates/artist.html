@@ -1,0 +1,73 @@
+{% extends "layout.html" %} {% block content %}
+<div id="centered_content-artist">
+  <form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <div class="row justify-content-center">
+      <fieldset class="col-md-6">
+        <legend>Select Top artist</legend>
+        <div>
+          {{ form.artist1.label (class="form-label fs-6")}}<br />
+          {% if form.artist1.errors %} {{ form.artist1(class='form-control
+          is-invalid') }}
+          <div class="invalid-feedback">
+            {% for error in form.artist1.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.artist1(class="form-control
+          custom-selector-input")}} {% endif %}
+        </div>
+        <div>
+          {{ form.artist2.label (class="form-label fs-6")}}<br />
+          {% if form.artist2.errors %} {{ form.artist2(class='form-control
+          is-invalid') }}
+          <div class="invalid-feedback">
+            {% for error in form.artist2.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.artist2(class="form-control
+          custom-selector-input")}} {% endif %}
+        </div>
+        <div>
+          {{ form.artist3.label (class="form-label fs-6")}}<br />
+          {% if form.artist3.errors %} {{ form.artist3(class='form-control
+          is-invalid') }}
+          <div class="invalid-feedback">
+            {% for error in form.artist3.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.artist3(class="form-control
+          custom-selector-input")}} {% endif %}
+        </div>
+        <div>
+          {{ form.artist4.label (class="form-label fs-6")}}<br />
+          {% if form.artist4.errors %} {{ form.artist4(class=' form-control
+          is-invalid') }}
+          <div class="invalid-feedback">
+            {% for error in form.artist4.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.artist4(class="form-control
+          custom-selector-input")}} {% endif %}
+        </div>
+        <div>
+          {{ form.artist5.label (class="form-label fs-6")}}<br />
+          {% if form.artist5.errors %} {{ form.artist5(class=' form-control
+          is-invalid') }}
+          <div class="invalid-feedback">
+            {% for error in form.artist5.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+          </div>
+          {% else %} {{ form.artist5(class="form-control
+          custom-selector-input")}} {% endif %}
+        </div>
+      </fieldset>
+    </div>
+    <div>{{ form.submit(class="btn custom-btn-outline rounded-pill") }}</div>
+  </form>
+</div>
+{% endblock content %}

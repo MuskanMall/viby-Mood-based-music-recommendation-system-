@@ -1,0 +1,25 @@
+{% extends "layout.html" %} {% block content %}
+<p>Mood Detected : {{ mood_detected }}</p>
+<form method="POST" , action="">
+  {{ form.hidden_tag() }}
+  <fieldset>
+    <legend>Are you happy with this result?</legend>
+    <div>
+      {% for subfield in form.user_consent %} {{ subfield }} {{ subfield.label
+      }} {% endfor %}
+    </div>
+    <div class="mt-2">
+      {% if form.mood.errors%} {{form.mood(class="form-control form-control-lg
+      is-invalid") }}
+      <div class="invalid-feedback">
+        {% for error in form.mood.errors%}
+        <span>{{ error }}</span>
+        {% endfor %}
+      </div>
+      {% else %} {{ form.mood(class="form-control form-control-lg
+      custom-selector-input" ) }} {% endif %}
+    </div>
+  </fieldset>
+  <div>{{ form.submit(class="mt-3 custom-btn-outline") }}</div>
+</form>
+{% endblock content %}

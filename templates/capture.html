@@ -1,0 +1,35 @@
+<!-- FILEPATH: /Users/muskanmall/Desktop/capstone_website/cs_web/templates/about.html -->
+
+<!-- FILEPATH: /Users/muskanmall/Desktop/capstone_website/cs_web/templates/about.html -->
+
+{% extends "layout.html" %} {% block content %}
+
+<p class="text-center">
+  Lets look at your mood and find you some music to match it. Please upload a
+  picture of yourself.
+</p>
+<form method="post" enctype="multipart/form-data">
+  {{ form.hidden_tag() }}
+  <div class="row justify-content-center">
+    <!-- This will center the input field in the middle -->
+    <fieldset class="col-md-6">
+      <!-- Adjust the column size as needed -->
+      <div class="form-group">
+        <!-- {{ form.picture.label(class="form-label") }} -->{{
+        form.picture(class="form-control form-control-file custom-file-input
+        rounded-pill") }} {% if form.picture.errors %} {% for error in
+        form.picture.errors %}
+        <span class="text-danger">{{ error }}</span>
+        {% endfor %} {% endif %}
+      </div>
+    </fieldset>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+      <!-- This centers the button -->
+      {{ form.capture(class="btn btn-outline-warning mt-5 rounded-pill") }}
+    </div>
+  </div>
+</form>
+
+{% endblock content %}

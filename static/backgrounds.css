@@ -1,0 +1,89 @@
+/* site wide css */
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  background: radial-gradient(circle at 20% 20%, #f7aef8 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, #8093f1 0%, transparent 50%),
+    radial-gradient(circle at 60% 20%, #f7aef8 0%, transparent 50%),
+    radial-gradient(circle at 20% 40%, #00a5cf 30%, transparent 50%),
+    radial-gradient(circle at 90% 40%, #a7c957 20%, transparent 50%),
+    radial-gradient(circle at 60% 40%, #e71d36 20%, transparent 50%),
+    radial-gradient(circle at 5% 5%, #e71d36 40%, transparent 50%),
+    radial-gradient(circle at 20% 60%, #ffc43d 20%, transparent 50%),
+    radial-gradient(circle at 40% 60%, #ffc43d 0%, transparent 50%),
+    radial-gradient(circle at 60% 60%, #7fc4e1 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, #b388eb 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, #48cae4 20%, transparent 50%),
+    radial-gradient(circle at 95% 95%, #48cae4 20%, transparent 50%),
+    radial-gradient(circle at 60% 80%, #f7aef8 0%, transparent 50%);
+  background-color: #fff; /* Fallback color */
+  height: 100vh;
+}
+
+p {
+  font-size: 40px;
+}
+
+.centered_content {
+  margin: 200px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* capture-page */
+.custom-file-input {
+  background-color: transparent !important;
+  border: 2px solid #ff70a6 !important;
+  height: 3rem;
+}
+
+.custom-file-input::file-selector-button {
+  background-color: transparent !important;
+  border: 2px solid #ff70a6 !important;
+  height: 3rem;
+}
+
+.custom-file-input:hover {
+  background-color: #e9ff70 !important;
+}
+
+/* artist - page */
+
+.custom-selector-input {
+  margin-top: 10px;
+  border: 2px solid #80ffdb !important;
+  background: transparent;
+  color: #e9ff70; /* #affc41 */
+  border-radius: 20px;
+  text-align: center;
+}
+
+.custom-selector-input:hover {
+  background: #ff70a6 !important;
+  color: #000;
+}
+
+#centered_content-artist {
+  padding-top: 0px; /* This will override the padding-top in .centered_content when .centered_content-artist is also applied to the element */
+}
+
+.custom-btn-outline {
+  margin-top: 10px;
+  border: 2px solid #affc41 !important;
+  background: transparent;
+  color: #affc41;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.custom-btn-outline:hover {
+  background: #affc41;
+  color: #000;
+}
+
+.custom-btn-outline:active {
+  background: #e9ff70;
+  color: #000;
+}
