@@ -3,10 +3,11 @@ import base64
 from requests import post, get
 import os
 
-CLIENT_ID = 'e656fd8e62c94898ba2e63e50a95b37a'
-CLIENT_SECRET = '41244b13adb445839858f8241166e15c'
-REDIRECT_URI = 'http://localhost/'
-USER_ID = "31fblw4yma7uvm626hujymggbu6a"
+# Add your own credentials
+CLIENT_ID = '*************'
+CLIENT_SECRET = '*************'
+REDIRECT_URI = '*************'
+
 
 Artist_uris = []
 ALBUMS = {}
