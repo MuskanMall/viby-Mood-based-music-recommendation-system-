@@ -3,9 +3,9 @@ import spotipy
 
 from spotipy.oauth2 import SpotifyOAuth
 
-CLIENT_ID = '31a42b2cd2de4fc4b6b4cbfe22d22afc'
-CLIENT_SECRET = '857ad77cfec948a38fc022d187fa72ad'
-REDIRECT_URI = 'http://localhost/'
+CLIENT_ID = '*************'
+CLIENT_SECRET = '*************'
+REDIRECT_URI = '*************'
 
 
 SCOPE = "playlist-modify-public playlist-modify-private"
