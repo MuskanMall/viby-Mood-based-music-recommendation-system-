@@ -4,7 +4,7 @@ import os
 import RealTimeEMotionDetection 
 from spotify import get_playlist_url
 app =Flask(__name__)
-app.config['SECRET_KEY'] = '6b02adc4284f85698f6f61abe5fca402'
+app.config['SECRET_KEY'] = '*********'
 
 @app.route('/')
 @app.route('/home')
